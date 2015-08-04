@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="crys.maven.example Maven Webapp"
+  id="myeclipse.1438657474277"
+  context-root="/crys.maven.example"
+  j2ee-spec="5.0"
+  archive="crys.maven.example Maven Webapp.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
