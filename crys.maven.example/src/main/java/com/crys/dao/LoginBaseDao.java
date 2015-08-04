@@ -2,7 +2,7 @@ package com.crys.dao;
 
 import com.crys.model.User;
 
-public interface BaseDao {
+public interface LoginBaseDao {
 	public User get(int id);
 
 	public void insert(User user);

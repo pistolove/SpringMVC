@@ -16,9 +16,9 @@ public class LoginController extends BaseController{
 	@RequestMapping("/view")
 	public void add(Model model) {
 		User user = new User();
-		user.setAge(20);
+		user.setId(20);
 		user.setName("jack");
-		log.info("age="+user.getAge()+";name="+user.getName());
+		log.info("age="+user.getId()+";name="+user.getName());
 		this.facadeService.getLoginService().addUser(user);
 	}
 }

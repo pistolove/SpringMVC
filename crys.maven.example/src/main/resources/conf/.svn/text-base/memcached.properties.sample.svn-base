@@ -1,0 +1,3 @@
+memcached.servers=localhost:11211
+memcached.servers.weights=1
+memcached.pool=2

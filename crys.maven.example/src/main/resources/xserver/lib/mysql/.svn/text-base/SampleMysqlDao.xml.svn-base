@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xserver.lib.mysql.SampleMysqlDao">
+    <select id="get" parameterType="int"
+        resultType="xserver.lib.mysql.table.SampleMysqlTable">
+        select * from SAMPLE where id=#{id}
+    </select>
+
+    <select id="list" parameterType="map"
+        resultType="xserver.lib.mysql.table.SampleMysqlTable">
+        select * from SAMPLE where id between #{minId} and #{maxId}
+    </select>
+
+    <!-- useGeneratedKeys会告诉MyBatis使用JDBC的getGeneratedKeys方法来取出由数据内部生成的主键 -->
+    <insert id="insert" parameterType="xserver.lib.mysql.table.SampleMysqlTable"
+        useGeneratedKeys="true" keyProperty="id">
+        insert into SAMPLE(name) values(#{name})
+    </insert>
+</mapper>

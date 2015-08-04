@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf
+END
+log4j.properties.sample
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf/log4j.properties.sample
+END
+redis.properties.sample
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf/redis.properties.sample
+END
+jdbc.properties.sample
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf/jdbc.properties.sample
+END
+tp_url_cn.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf/tp_url_cn.properties
+END
+xserver_lib.properties.sample
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf/xserver_lib.properties.sample
+END
+memcached.properties.sample
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/86757/tp/webtvserver/trunk/sample/xserver-lib/src/main/resources/conf/memcached.properties.sample
+END

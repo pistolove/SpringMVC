@@ -8,10 +8,10 @@ import org.springframework.stereotype.Repository;
 public class FacadeDao {
 
 	@Resource
-	protected BaseDao baseDao;
+	protected LoginBaseDao loginBaseDao;
 
-	public BaseDao getLoginDao() {
-		return baseDao;
+	public LoginBaseDao getLoginDao() {
+		return loginBaseDao;
 	}
 
 }

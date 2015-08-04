@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import com.crys.model.User;
 
 @Repository
-public class LoginDao implements BaseDao{
+public class LoginDao implements LoginBaseDao{
 
 	public User get(int id) {
 		// TODO Auto-generated method stub
@@ -13,7 +13,7 @@ public class LoginDao implements BaseDao{
 	}
 
 	public void insert(User user) {
-		System.err.println("insert successful" +user.getAge()+"; "+user.getName());
+		System.err.println("insert successful" +user.getId()+"; "+user.getName());
 	}
 
 	public void delete(int id) {
