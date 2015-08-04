@@ -1,9 +1,0 @@
-com\crys\controller\BaseController.class
-com\crys\model\User.class
-com\crys\service\LoginService.class
-com\crys\dao\BaseDao.class
-com\crys\dao\FacadeDao.class
-com\crys\dao\LoginDao.class
-com\crys\service\BaseService.class
-com\crys\controller\LoginController.class
-com\crys\service\FacadeService.class
