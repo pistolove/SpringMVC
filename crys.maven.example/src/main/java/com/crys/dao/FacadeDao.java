@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository("facadeDao")
 public class FacadeDao {
 
 	@Resource

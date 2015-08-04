@@ -15,7 +15,9 @@
 		http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
 	<mvc:annotation-driven />
-	<context:component-scan base-package="crys.maven.example" />
+	<context:component-scan base-package="com.crys.controller" />
+	<context:component-scan base-package="com.crys.dao" />
+	<context:component-scan base-package="com.crys.service" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -24,8 +26,7 @@
 	</bean>
 
 
-	<context:property-placeholder
-		location="classpath:/conf/jdbc.properties" />
+	<context:property-placeholder location="classpath:/conf/jdbc.properties" />
 
 	<!-- 导入其他配置文件 -->
 	<import resource="classpath:xserver-lib-http.xml" />

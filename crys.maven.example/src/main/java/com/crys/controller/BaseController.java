@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 
 import com.crys.service.FacadeService;
 
-@Controller
+@Controller("baseController")
 public class BaseController {
 
 	@Resource
