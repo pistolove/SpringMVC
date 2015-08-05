@@ -1,10 +1,9 @@
 package com.crys.dao;
 
 import javax.annotation.Resource;
+import org.springframework.stereotype.Component;
 
-import org.springframework.stereotype.Repository;
-
-@Repository("facadeDao")
+@Component
 public class FacadeDao {
 
 	@Resource

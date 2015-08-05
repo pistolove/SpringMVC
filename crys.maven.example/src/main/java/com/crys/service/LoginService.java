@@ -1,17 +1,17 @@
 package com.crys.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import com.crys.model.User;
 
-@Service("loginService")
+@Component
 public class LoginService extends BaseService {
 
 	public void addUser(User user) {
 		this.getFacadeDao().getLoginDao().insert(user);
 	}
 
-	public void getUser(int id) {
-		this.getFacadeDao().getLoginDao().get(id);
+	public User getUser(int id) {
+		return this.getFacadeDao().getLoginDao().get(id);
 	}
 
 	public void deleteUser(int id) {
@@ -19,7 +19,7 @@ public class LoginService extends BaseService {
 	}
 
 	public void updateUser(User user) {
-		this.getFacadeDao().getLoginDao().insert(user);
+		this.getFacadeDao().getLoginDao().update(user);
 	}
 
 }

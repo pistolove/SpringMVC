@@ -1,10 +1,10 @@
 package com.crys.dao;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import com.crys.model.User;
 
-@Repository("loginBaseDao")
+@Component
 public interface LoginBaseDao {
 	public User get(int id);
 

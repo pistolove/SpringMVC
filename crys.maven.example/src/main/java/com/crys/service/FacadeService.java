@@ -1,10 +1,9 @@
 package com.crys.service;
 
 import javax.annotation.Resource;
+import org.springframework.stereotype.Component;
 
-import org.springframework.stereotype.Service;
-
-@Service("facadeService")
+@Component
 public class FacadeService {
 
 	@Resource
