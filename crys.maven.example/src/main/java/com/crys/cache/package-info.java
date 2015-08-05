@@ -1,5 +1,5 @@
 package com.crys.cache;
 
 /**
- *  constant
+ *  缓存
  */

@@ -1,7 +1,9 @@
 package com.crys.service;
 
 import org.springframework.stereotype.Component;
+import com.crys.cache.CacheUnit;
 import com.crys.model.User;
+
 
 @Component
 public class LoginService extends BaseService {
@@ -22,4 +24,8 @@ public class LoginService extends BaseService {
 		this.getFacadeDao().getLoginDao().update(user);
 	}
 
+    public CacheUnit testTpCache(String key) {
+        return this.getCacheTemplate().get(key, CacheUnit.class);
+    }
+	
 }

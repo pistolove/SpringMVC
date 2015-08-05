@@ -6,10 +6,13 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import com.crys.cache.CacheUnit;
 import com.crys.model.User;
+import com.crys.response.Response;
 
 @Controller
 @RequestMapping("/login")
@@ -56,5 +59,20 @@ public class LoginController extends BaseController{
 		
 		return "update";
 	}
+	
+	
+    @RequestMapping(value = "/cache")
+    public Response<String> data(HttpServletRequest request, @RequestParam(value = "id", required = false) String id,
+            Model model1, Model model2) {
+        log.info("request:data:" + id);
+        CacheUnit tpCache = this.facadeService.getLoginService().testTpCache("key1");
+        Response<String> response = new Response<String>();
+        response.setErrorCode("001");
+        response.setData(id + "," + tpCache.getName());
+        model1.addAttribute("testkey1", "testvalue1");
+        model2.addAttribute("testkey2", "testvalue2");
+
+        return response;
+    }
 	
 }
