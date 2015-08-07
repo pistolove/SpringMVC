@@ -41,6 +41,8 @@ public class MemcachedTemplate extends CacheTemplate {
 		memcachedClient.setEnableHeartBeat(false);
 		memcachedClient.setOpTimeout(2000L);
 		memcachedClient.getTranscoder().setCompressionThreshold(1024 * 50);// 设置数据压缩范围
+		Object object = memcachedClient.get("key1");
+		System.err.println(object.toString());
 	}
 
 	/**
